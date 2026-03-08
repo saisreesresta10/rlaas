@@ -1,0 +1,4 @@
+# file: C:\Users\Dell\OneDrive\Documents\data-limiter project\rlaas\token_bucket.py
+# hypothesis_version: 6.151.4
+
+[0.0, 1000, 'burst', 'client_id', 'current_tokens', 'endpoint', 'http_method', 'last_refill', 'limit', 'max_tokens', 'refill_rate', 'rule', 'time_until_full', 'window_seconds']

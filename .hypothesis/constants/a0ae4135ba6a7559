@@ -1,0 +1,4 @@
+# file: C:\Users\Dell\OneDrive\Documents\data-limiter project\rlaas\decision_api.py
+# hypothesis_version: 6.151.4
+
+[100, '; ', 'DELETE', 'GET', 'HEAD', 'OPTIONS', 'PATCH', 'POST', 'PUT', 'active', 'burst', 'circuit_breaker', 'client_id', 'components', 'connectivity', 'current_state', 'degraded', 'endpoint', 'error', 'healthy', 'http_method', 'limit', 'redis_state', 'refill_rate', 'rule', 'rule_management', 'service', 'status', 'timestamp', 'token_bucket', 'tokens', 'unhealthy', 'window_seconds']

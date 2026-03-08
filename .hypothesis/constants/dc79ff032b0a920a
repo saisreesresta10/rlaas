@@ -1,0 +1,4 @@
+# file: C:\Users\Dell\OneDrive\Documents\data-limiter project\rlaas\metrics.py
+# hypothesis_version: 6.151.4
+
+[0.0, 0.001, 0.002, 0.005, 0.01, 0.025, 0.05, 0.1, 0.25, 0.5, 1.0, 2.5, 5.0, 10.0, 'allowed', 'blocked', 'client_id', 'closed', 'component', 'duration', 'endpoint', 'error', 'error_type', 'half-open', 'http_method', 'metrics_available', 'open', 'operation', 'prometheus_client', 'rate_limit_check', 'redis', 'registry', 'result', 'rlaas_errors_total', 'rlaas_metrics', 'rlaas_requests_total', 'rlaas_rules_total', 'service', 'start_time', 'status', 'success', 'timestamp', 'utf-8']

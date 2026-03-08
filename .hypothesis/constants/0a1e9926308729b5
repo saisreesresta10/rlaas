@@ -1,0 +1,4 @@
+# file: C:\Users\Dell\OneDrive\Documents\data-limiter project\rlaas\logging_service.py
+# hypothesis_version: 6.151.4
+
+[400, 500, 1000000, '%Y-%m-%dT%H:%M:%S', '1.0.0', 'Error occurred', 'Startup event failed', 'allowed', 'api_request', 'blocked', 'burst', 'client_id', 'client_ip', 'component', 'correlation_id', 'degraded', 'details', 'duration_ms', 'endpoint', 'error', 'error_details', 'error_type', 'event_type', 'failure', 'failure_count', 'health_check', 'http_method', 'limit', 'log_level', 'message', 'operation', 'path', 'rate_limit_decision', 'redis_key', 'redis_operation', 'remaining_tokens', 'request_size', 'reset_after_ms', 'response_size', 'result', 'result_size', 'retry_after_ms', 'rlaas', 'rule', 'rule_operation', 'service', 'stack_trace', 'startup_event', 'state', 'status', 'status_code', 'success', 'timestamp', 'timestamp_iso', 'unhealthy', 'used_default_rule', 'user_agent', 'version', 'window_seconds']

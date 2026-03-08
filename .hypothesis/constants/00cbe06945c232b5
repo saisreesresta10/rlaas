@@ -1,0 +1,4 @@
+# file: C:\Users\Dell\OneDrive\Documents\data-limiter project\rlaas\rule_management.py
+# hypothesis_version: 6.151.4
+
+[100, 120, 86400, 100000, 200000, '; ', 'DELETE', 'GET', 'HEAD', 'OPTIONS', 'PATCH', 'POST', 'PUT', 'burst', 'default_config', 'degraded', 'error', 'healthy', 'limit', 'message', 'redis_connectivity', 'rule_management', 'service', 'status', 'timestamp', 'unhealthy', 'window_seconds']

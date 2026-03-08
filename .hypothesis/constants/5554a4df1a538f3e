@@ -1,0 +1,4 @@
+# file: C:\Users\Dell\OneDrive\Documents\data-limiter project\rlaas\redis_client.py
+# hypothesis_version: 6.151.4
+
+[0.1, 200, 6379, 'T', 'fail_closed', 'fail_open', 'failure_count', 'failure_rate', 'localhost', 'redis_client', 'state', 'state_changes', 'success_count', 'success_rate', 'total_failures', 'total_requests', 'total_successes']

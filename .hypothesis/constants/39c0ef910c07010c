@@ -1,0 +1,4 @@
+# file: C:\Users\Dell\OneDrive\Documents\data-limiter project\rlaas\container.py
+# hypothesis_version: 6.151.4
+
+['ServiceContainer', 'components', 'config_loaded', 'container', 'counters', 'decision_api', 'default_limit', 'disabled', 'enabled', 'error', 'gauges', 'health_check_error', 'healthy', 'histograms', 'initialization_error', 'metrics', 'metrics_enabled', 'metrics_service', 'redis_client_manager', 'redis_host', 'redis_port', 'redis_state_manager', 'rlaas_container', 'service', 'services', 'services_initialized', 'shutdown_error', 'status', 'timestamp', 'token_bucket_service', 'total_metrics', 'unhealthy', 'unknown']

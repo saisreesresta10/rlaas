@@ -1,0 +1,39 @@
+[build-system]
+requires = ["setuptools>=61.0", "wheel"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "rlaas"
+version = "0.1.0"
+description = "Distributed Rate Limiter as a Service"
+authors = [{name = "RLaaS Team"}]
+dependencies = [
+    "fastapi>=0.104.1",
+    "uvicorn>=0.24.0",
+    "redis>=5.0.1",
+    "pydantic>=2.5.0",
+    "structlog>=23.2.0",
+    "prometheus-client>=0.19.0",
+]
+
+[project.optional-dependencies]
+test = [
+    "pytest>=7.4.3",
+    "pytest-asyncio>=0.21.1",
+    "hypothesis>=6.92.1",
+]
+
+[tool.pytest.ini_options]
+asyncio_mode = "auto"
+testpaths = ["tests"]
+python_files = ["test_*.py", "*_test.py"]
+python_classes = ["Test*"]
+python_functions = ["test_*"]
+
+[tool.black]
+line-length = 88
+target-version = ['py311']
+
+[tool.isort]
+profile = "black"
+line_length = 88

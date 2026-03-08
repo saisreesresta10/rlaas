@@ -1,0 +1,4 @@
+# file: C:\Users\Dell\OneDrive\Documents\data-limiter project\rlaas\circuit_breaker.py
+# hypothesis_version: 6.151.4
+
+[0.0, 0.001, 100.0, 1000.0, 'T', 'closed', 'default', 'half_open', 'open']
