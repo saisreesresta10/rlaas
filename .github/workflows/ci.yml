@@ -1,0 +1,71 @@
+name: CI - Test & Lint
+
+on:
+  push:
+    branches: [main, develop]
+  pull_request:
+    branches: [main, develop]
+
+jobs:
+  test:
+    name: Run Tests
+    runs-on: ubuntu-latest
+
+    services:
+      redis:
+        image: redis:7-alpine
+        ports:
+          - 6379:6379
+        options: >-
+          --health-cmd "redis-cli ping"
+          --health-interval 10s
+          --health-timeout 5s
+          --health-retries 5
+
+    steps:
+      - name: Checkout code
+        uses: actions/checkout@v4
+
+      - name: Set up Python 3.11
+        uses: actions/setup-python@v5
+        with:
+          python-version: "3.11"
+          cache: "pip"
+
+      - name: Install dependencies
+        run: pip install -e ".[test]"
+
+      - name: Run core unit tests
+        env:
+          RLAAS_REDIS_HOST: localhost
+          RLAAS_REDIS_PORT: 6379
+        run: pytest tests/ -v --ignore=tests/test_integration_e2e.py -x
+
+      - name: Run integration tests
+        env:
+          RLAAS_REDIS_HOST: localhost
+          RLAAS_REDIS_PORT: 6379
+        run: pytest tests/test_integration_e2e_simple.py -v
+
+  lint:
+    name: Lint & Format Check
+    runs-on: ubuntu-latest
+
+    steps:
+      - name: Checkout code
+        uses: actions/checkout@v4
+
+      - name: Set up Python 3.11
+        uses: actions/setup-python@v5
+        with:
+          python-version: "3.11"
+          cache: "pip"
+
+      - name: Install lint tools
+        run: pip install black isort
+
+      - name: Check formatting (black)
+        run: black --check rlaas/ tests/
+
+      - name: Check import order (isort)
+        run: isort --check-only rlaas/ tests/
